@@ -158,21 +158,3 @@ Recommended framing:
 - quick interviews
 
 This should be connected with WeChat, TikTok, Instagram, or Xiaohongshu content rather than treated as a separate editorial workload from the beginning.
-
-## 7. Phase 1 Scope
-
-The current phase should stay simple:
-
-- show the visual direction of the website
-- confirm the main sitemap
-- demonstrate the homepage content structure
-- show how WeChat content can be expanded into web articles, video, guides, and events
-- prepare a clear foundation for later advertising and business cooperation
-
-## 8. Suggested Next Steps
-
-1. Confirm the final sitemap and homepage sections.
-2. Replace sample articles with real WeChat content or selected past posts.
-3. Choose the first 10-15 articles or posts to migrate.
-4. Define cooperation packages for local businesses.
-5. Decide whether the next phase should focus on content management, advertising slots, or short video feed.
