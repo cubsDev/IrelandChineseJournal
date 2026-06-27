@@ -33,6 +33,18 @@ export default function NewsPage() {
           </a>
         ))}
       </div>
+      <div className="mt-4 flex flex-wrap gap-2">
+        {["中爱资讯", "玩转都柏林", "海滩指南", "生活服务", "亲子路线", "最新活动", "活动回顾", "商务合作"].map(
+          (tag) => (
+            <span
+              key={tag}
+              className="border border-stone-300 bg-white px-2.5 py-1 text-sm font-medium text-stone-700"
+            >
+              {tag}
+            </span>
+          )
+        )}
+      </div>
 
       <div className="grid gap-10 pt-8 lg:grid-cols-[1fr_320px]">
         <div>

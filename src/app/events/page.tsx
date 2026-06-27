@@ -4,7 +4,7 @@ import { WeChatBlock } from "@/components/WeChatBlock";
 import { events } from "@/data/events";
 
 export const metadata = {
-  title: "活动 / Ireland Chinese Journal",
+  title: "活动资讯 / Ireland Chinese Journal",
 };
 
 export default function EventsPage() {
@@ -13,12 +13,12 @@ export default function EventsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 lg:px-6">
-      <SectionHeader title="活动" eyebrow="Events" />
+      <SectionHeader title="活动资讯" eyebrow="Events" />
       <div className="grid gap-10 lg:grid-cols-[1fr_320px]">
         <div className="space-y-10">
           <section>
             <h2 className="mb-4 text-lg font-semibold text-stone-950">
-              Upcoming / 即将举行
+              最新活动 / Upcoming
             </h2>
             <div className="grid gap-5">
               {upcoming.map((event) => (
@@ -28,7 +28,7 @@ export default function EventsPage() {
           </section>
           <section>
             <h2 className="mb-4 text-lg font-semibold text-stone-950">
-              Past / 往期活动
+              活动回顾 / Past
             </h2>
             <div className="grid gap-5">
               {past.map((event) => (

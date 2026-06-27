@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = [
-  ["About", "/about"],
+  ["About & Cooperation", "/about"],
   ["Contact", "mailto:hello@icjournal.ie"],
   ["Submission", "mailto:submissions@icjournal.ie"],
-  ["Advertising cooperation", "mailto:ads@icjournal.ie"],
+  ["Business cooperation", "mailto:ads@icjournal.ie"],
 ];
 
 export function Footer() {
@@ -21,7 +21,7 @@ export function Footer() {
             className="h-16 w-auto bg-white"
           />
           <p className="mt-4 max-w-md text-sm leading-6 text-stone-400">
-            记录在爱华人社区，连接中爱新闻、实用信息、影像报道与本地合作。
+            记录在爱华人社区，连接爱尔兰资讯、实用信息、影像报道与本地合作。
           </p>
         </div>
         <nav className="grid grid-cols-2 gap-3 text-sm">

@@ -63,9 +63,9 @@ export default function Home() {
       <div className="grid gap-10 py-10 lg:grid-cols-[1fr_320px]">
         <div className="space-y-12">
           <section id="news">
-            <SectionHeader title="中爱资讯" eyebrow="Ireland-China News" href="/news" />
+            <SectionHeader title="爱尔兰资讯" eyebrow="Ireland Updates" href="/news" />
             <div className="grid gap-6 md:grid-cols-3">
-              {getArticlesByCategory("中爱资讯").map((article) => (
+              {getArticlesByCategory("爱尔兰资讯").map((article) => (
                 <ArticleCard key={article.slug} article={article} />
               ))}
               {getArticlesByCategory("爱尔兰生活")
@@ -77,18 +77,18 @@ export default function Home() {
           </section>
 
           <section id="community">
-            <SectionHeader title="华人社区" eyebrow="Chinese Community" href="/news" />
+            <SectionHeader title="华人志社区" eyebrow="Chinese Community" href="/news" />
             <div className="grid gap-5 md:grid-cols-2">
-              {getArticlesByCategory("华人社区").map((article) => (
+              {getArticlesByCategory("华人志社区").map((article) => (
                 <ArticleCard key={article.slug} article={article} horizontal />
               ))}
             </div>
           </section>
 
           <section id="media">
-            <SectionHeader title="融媒热点" eyebrow="Media Highlights" href="/video" />
+            <SectionHeader title="编辑精选" eyebrow="Editor's Picks" href="/news" />
             <div className="grid gap-6 md:grid-cols-2">
-              {getArticlesByCategory("融媒热点").map((article) => (
+              {getArticlesByCategory("精选内容").map((article) => (
                 <ArticleCard key={article.slug} article={article} />
               ))}
               {videos.slice(0, 1).map((video) => (
@@ -98,7 +98,7 @@ export default function Home() {
           </section>
 
           <section>
-            <SectionHeader title="视频报道" eyebrow="Video Reports" href="/video" />
+            <SectionHeader title="精选视频" eyebrow="Video" href="/video" />
             <div className="grid gap-6 md:grid-cols-2">
               {videos.slice(0, 2).map((video) => (
                 <VideoCard key={video.slug} video={video} />
@@ -108,6 +108,16 @@ export default function Home() {
 
           <section id="life">
             <SectionHeader title="爱尔兰生活" eyebrow="Life in Ireland" href="/news" />
+            <div className="mb-5 flex flex-wrap gap-2">
+              {["玩转都柏林", "海滩指南", "生活服务", "亲子路线"].map((tag) => (
+                <span
+                  key={tag}
+                  className="border border-stone-300 bg-white px-2.5 py-1 text-sm font-medium text-stone-700"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
             <div className="grid gap-6 md:grid-cols-3">
               {getArticlesByCategory("爱尔兰生活").map((article) => (
                 <ArticleCard key={article.slug} article={article} compact />
@@ -129,7 +139,7 @@ export default function Home() {
           </section>
 
           <section>
-            <SectionHeader title="活动" eyebrow="Events" href="/events" />
+            <SectionHeader title="活动资讯" eyebrow="Events" href="/events" />
             <div className="grid gap-5">
               {events.slice(0, 2).map((event) => (
                 <EventCard key={event.slug} event={event} />

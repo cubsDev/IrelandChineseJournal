@@ -4,6 +4,25 @@ import { formatDate } from "@/lib/format";
 import { ArticleImage } from "@/components/ArticleImage";
 import { CategoryBadge } from "@/components/CategoryBadge";
 
+function ArticleTags({ tags }: { tags: string[] }) {
+  if (tags.length === 0) {
+    return null;
+  }
+
+  return (
+    <div className="mt-2 flex flex-wrap gap-1.5">
+      {tags.slice(0, 3).map((tag) => (
+        <span
+          key={tag}
+          className="border-l border-red-800 pl-1.5 text-xs font-medium text-stone-500"
+        >
+          {tag}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 export function ArticleCard({
   article,
   compact = false,
@@ -24,6 +43,7 @@ export function ArticleCard({
           className="float-left mr-4 mb-2 aspect-[4/3] w-28 sm:w-32"
         />
         <CategoryBadge>{article.category}</CategoryBadge>
+        <ArticleTags tags={article.tags} />
         <h3 className="mt-2 text-base font-semibold leading-snug text-stone-950">
           <Link href={`/news/${article.slug}`} className="hover:text-red-800">
             {article.title}
@@ -46,6 +66,7 @@ export function ArticleCard({
         <ArticleImage src={article.image} alt="" className="aspect-[4/3]" />
         <div>
           <CategoryBadge>{article.category}</CategoryBadge>
+          <ArticleTags tags={article.tags} />
           <h3 className="mt-2 text-base font-semibold leading-snug text-stone-950">
             <Link href={`/news/${article.slug}`} className="hover:text-red-800">
               {article.title}
@@ -71,6 +92,7 @@ export function ArticleCard({
       />
       <div className="mt-3">
         <CategoryBadge>{article.category}</CategoryBadge>
+        <ArticleTags tags={article.tags} />
         <h3
           className={
             compact

@@ -1,11 +1,11 @@
 export type ArticleCategory =
-  | "中爱资讯"
-  | "华人社区"
-  | "融媒热点"
-  | "视频报道"
+  | "爱尔兰资讯"
+  | "华人志社区"
+  | "精选内容"
+  | "精选视频"
   | "爱尔兰生活"
   | "留学爱尔兰"
-  | "活动";
+  | "活动资讯";
 
 export type Article = {
   slug: string;
@@ -15,6 +15,7 @@ export type Article = {
   date: string;
   author: string;
   image: string;
+  tags: string[];
   featured?: boolean;
   mostRead?: boolean;
   editorPick?: boolean;
@@ -22,13 +23,13 @@ export type Article = {
 };
 
 export const categories: ArticleCategory[] = [
-  "中爱资讯",
-  "华人社区",
-  "融媒热点",
-  "视频报道",
+  "爱尔兰资讯",
+  "华人志社区",
+  "精选内容",
+  "精选视频",
   "爱尔兰生活",
   "留学爱尔兰",
-  "活动",
+  "活动资讯",
 ];
 
 const photo = (id: string) =>
@@ -40,7 +41,8 @@ export const articles: Article[] = [
     title: "都柏林华人社区进入新阶段：从安家到参与城市公共生活",
     excerpt:
       "随着新移民、留学生和本地家庭结构变化，爱尔兰华人社区正在形成更稳定的公共表达与互助网络。",
-    category: "华人社区",
+    category: "华人志社区",
+    tags: ["本地资讯", "社区观察"],
     date: "2026-06-18",
     author: "本报记者 林嘉文",
     image:
@@ -59,7 +61,8 @@ export const articles: Article[] = [
     title: "中爱文化交流夏季项目公布，音乐、电影与地方城市合作成重点",
     excerpt:
       "多个文化机构将在夏季推出交流活动，覆盖都柏林、基尔代尔与高威等地。",
-    category: "中爱资讯",
+    category: "爱尔兰资讯",
+    tags: ["中爱资讯", "文化交流"],
     date: "2026-06-14",
     author: "编辑部",
     image: photo("photo-1517457373958-b7bdd4587205"),
@@ -75,6 +78,7 @@ export const articles: Article[] = [
     excerpt:
       "从预约、材料、照片到邮寄等待，本文梳理近期读者咨询最多的身份更新问题。",
     category: "爱尔兰生活",
+    tags: ["生活服务", "签证身份"],
     date: "2026-06-10",
     author: "生活组",
     image: photo("photo-1450101499163-c8848c66ca85"),
@@ -92,6 +96,7 @@ export const articles: Article[] = [
     excerpt:
       "留学生抵达爱尔兰后的前两周，往往决定整个学期的生活节奏。",
     category: "留学爱尔兰",
+    tags: ["新生指南", "校园生活"],
     date: "2026-06-07",
     author: "留学组",
     image: photo("photo-1523580846011-d3a5bc25702b"),
@@ -107,6 +112,7 @@ export const articles: Article[] = [
     excerpt:
       "房源紧张让许多新移民和学生面临高价、短租和非正规合约风险。",
     category: "爱尔兰生活",
+    tags: ["生活服务", "租房"],
     date: "2026-06-03",
     author: "记者 陈思远",
     image: photo("photo-1501183638710-841dd1904471"),
@@ -121,7 +127,8 @@ export const articles: Article[] = [
     title: "从餐饮到跨境服务：都柏林本地华人商户的第二代转型",
     excerpt:
       "年轻经营者正在把传统熟人网络转化为品牌、内容和专业服务。",
-    category: "华人社区",
+    category: "华人志社区",
+    tags: ["商务合作", "本地商户"],
     date: "2026-05-30",
     author: "商业观察",
     image: photo("photo-1555396273-367ea4eb4db5"),
@@ -136,6 +143,7 @@ export const articles: Article[] = [
     excerpt:
       "离开都柏林不等于远离机会，小城学习生活也有自己的节奏。",
     category: "留学爱尔兰",
+    tags: ["人物访谈", "校园生活"],
     date: "2026-05-24",
     author: "访谈组",
     image: photo("photo-1524995997946-a1c2e315a42f"),
@@ -149,7 +157,8 @@ export const articles: Article[] = [
     title: "本周融媒热点：社区短视频、活动直播与中文播客正在升温",
     excerpt:
       "海外中文媒体的传播方式正在从公众号图文延伸到短视频、直播和播客。",
-    category: "融媒热点",
+    category: "精选内容",
+    tags: ["精选文章", "精选视频"],
     date: "2026-05-20",
     author: "融媒组",
     image: photo("photo-1495020689067-958852a7765e"),
@@ -165,6 +174,7 @@ export const articles: Article[] = [
     excerpt:
       "从海边步道到博物馆，适合带孩子轻松体验爱尔兰本地生活。",
     category: "爱尔兰生活",
+    tags: ["玩转都柏林", "亲子路线"],
     date: "2026-05-18",
     author: "生活组",
     image: photo("photo-1500530855697-b586d89ba3ee"),
@@ -178,7 +188,8 @@ export const articles: Article[] = [
     title: "端午文化日在都柏林举行，社区摊位与青少年表演开放报名",
     excerpt:
       "活动将设置传统文化体验、公益咨询和本地华人机构展示区。",
-    category: "活动",
+    category: "活动资讯",
+    tags: ["最新活动", "活动回顾"],
     date: "2026-05-12",
     author: "活动组",
     image: photo("photo-1511795409834-ef04bbd61622"),

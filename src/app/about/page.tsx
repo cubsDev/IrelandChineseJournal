@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { WeChatBlock } from "@/components/WeChatBlock";
 
 export const metadata = {
-  title: "关于我们 / Ireland Chinese Journal",
+  title: "关于与合作 / Ireland Chinese Journal",
 };
 
 const contacts = [
@@ -16,14 +16,14 @@ const contacts = [
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 lg:px-6">
-      <SectionHeader title="关于我们" eyebrow="About" />
+      <SectionHeader title="关于与合作" eyebrow="About & Cooperation" />
       <div className="grid gap-10 lg:grid-cols-[1fr_320px]">
         <div className="max-w-3xl">
           <h1 className="text-3xl font-semibold leading-tight text-stone-950 md:text-4xl">
             Ireland Chinese Journal / 爱尔兰华人志
           </h1>
           <p className="mt-5 text-lg leading-8 text-stone-700">
-            我们是面向爱尔兰华人居民、学生、专业人士、家庭与本地企业的中文媒体原型项目，关注中爱资讯、社区公共生活、实用指南、文化交流与影像报道。
+            我们是面向爱尔兰华人居民、学生、专业人士、家庭与本地企业的中文媒体原型项目，关注爱尔兰资讯、社区公共生活、实用指南、文化交流与影像报道。
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -31,7 +31,7 @@ export default function AboutPage() {
               <Newspaper className="size-5 text-red-800" aria-hidden="true" />
               <h2 className="mt-3 font-semibold text-stone-950">新闻报道</h2>
               <p className="mt-2 text-sm leading-6 text-stone-600">
-                记录中爱交流、本地政策变化与社区议题。
+                记录爱尔兰本地资讯、文化交流与社区议题。
               </p>
             </div>
             <div className="border border-stone-200 bg-white p-4">

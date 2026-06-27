@@ -57,6 +57,16 @@ export default async function ArticlePage({
         <div>
           <div className="mx-auto max-w-3xl">
             <CategoryBadge>{article.category}</CategoryBadge>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {article.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="border-l border-red-800 pl-2 text-sm font-medium text-stone-500"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
             <h1 className="mt-4 text-3xl font-semibold leading-tight text-stone-950 md:text-5xl">
               {article.title}
             </h1>

@@ -9,7 +9,7 @@ export function EditorPicks({ articles }: { articles: Article[] }) {
         {articles.map((article) => (
           <article key={article.slug}>
             <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-red-800">
-              {article.category}
+              {article.tags[0] ?? article.category}
             </p>
             <h3 className="mt-1 text-base font-semibold leading-snug">
               <Link href={`/news/${article.slug}`} className="hover:text-red-800">
