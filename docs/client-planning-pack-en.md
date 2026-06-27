@@ -2,9 +2,7 @@
 
 ## 1. Purpose
 
-This document supports the Phase 1 demonstration website for Ireland Chinese Journal. The goal of this phase is to show a clear website direction, content structure, and homepage layout that can extend the existing WeChat presence into a more permanent media platform.
-
-The website should not replace the WeChat page. It should support it by giving important stories, guides, videos, events, and cooperation information a more organized place to live.
+This document accompanies the Phase 1 demonstration website for Ireland Chinese Journal. The goal of this phase is to show a clear website direction, content structure, and homepage layout for a permanent Chinese-language media platform in Ireland.
 
 ## 2. Project Positioning
 
@@ -107,10 +105,10 @@ Events
 Sidebar / Supporting Area
 Most Read
 Editor's Picks
-WeChat follow block
+Contact and cooperation block
 
 Footer
-About | Cooperation | Contact | WeChat
+About | Cooperation | Contact
 ------------------------------------------------------------
 ```
 
@@ -127,7 +125,7 @@ Possible formats:
 - homepage promotion slot
 - event sponsorship
 - seasonal campaign page
-- WeChat plus website bundle
+- cross-platform promotion bundle
 
 ### Local Tour Guide Suggestions and Matching
 
@@ -157,4 +155,4 @@ Recommended framing:
 - business spotlights
 - quick interviews
 
-This should be connected with WeChat, TikTok, Instagram, or Xiaohongshu content rather than treated as a separate editorial workload from the beginning.
+This should be connected with TikTok, Instagram, or Xiaohongshu content rather than treated as a separate editorial workload from the beginning.
